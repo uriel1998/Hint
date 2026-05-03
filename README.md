@@ -5,6 +5,8 @@ Hint is a [Roll20](http://roll20.net/) script that allows the GM to send a hint 
 
 This script takes advantage of the `visibleTo` parameter of the [sendPing API function](https://wiki.roll20.net/API:Utility_Functions#Miscellaneous) to only ping the players who control those characters.
 
+Demo video: [YouTube](https://youtu.be/8rg2mMtJPyA)
+
 Original script by blawson69 
 On Github:	https://github.com/blawson69
 (It appears blawson has not been active on GitHub or Roll20 for some years; I hope they are well.)
