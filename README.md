@@ -16,8 +16,10 @@ The Hint script will ping the designated players, and will move the map to the l
 
 ### Which Should I Use?
 
---to: This selects which character *in the journal* will get the ping. This **only** works with characters in the journal.   Case **in**sensitive. 
---player: The player name that will get the ping.  Case **in**sensitive.  
+--to: This selects which character *in the journal* will get the ping. This **only** works with characters in the journal. Case **in**sensitive.  
+
+--player: The player name that will get the ping.  Case **in**sensitive.   
+
 --token: Which token(s) with that name get the ping.   Case **in**sensitive. **This can match unintended targets if you're not careful.** 
 
 Multiple targets *of the same type* can be specified by comma separating them.  For example:
