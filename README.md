@@ -11,9 +11,38 @@ Place a token in the location where you want the ping to originate. This can be 
 !hint --msg|<message-text> --player|<player-names>
 !hint --msg|<message-text> --token|<token-names>
 ```
+
 The Hint script will ping the designated players, and will move the map to the location of the ping for each of them as well (as if long-clicking with the Shift key depressed). Players who are not targeted by the command will see neither the ping nor the whispered message.
 
-### With A Macro
+### Which Should I Use?
+
+--to: This selects which character *in the journal* will get the ping. This **only** works with characters in the journal.   Case **in**sensitive. 
+--player: The player name that will get the ping.  Case **in**sensitive.  
+--token: Which token(s) with that name get the ping.   Case **in**sensitive. **This can match unintended targets if you're not careful.** 
+
+Multiple targets *of the same type* can be specified by comma separating them.  For example:
+
+```
+!hint --msg|test --player|Uriel,Steven,Kaliea
+!hint --msg|test --token|Zeren,Dormi Somatk,Stoneward,Karth
+```
+
+### Dynamically Choosing Recipients And Messages
+
+You can configure it to query you for a hint message as well (with a fallback default) by making the message section look like this:
+
+```
+--msg|?{Hint message|There's noise here.} 
+```
+
+The same goes for recipients (I would *not* use this with --token, due to the possibility of mismatch): 
+
+```
+--player|?{Recipient player name|Steven}
+--to|?{Recipient character name|Soldier}
+```
+
+### Using It With A Macro
 
 Create a macro with the *same text* you would use if typing the command.  You want to select "Show as Token Action" so you don't forget that you have to select something first.  
 
