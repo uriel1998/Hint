@@ -1,7 +1,27 @@
 # Hint
+
+
 Hint is a [Roll20](http://roll20.net/) script that allows the GM to send a hint to designated characters, players, or token controllers along with a ping to a map location. As an example, you can whisper the message "You notice a loose tile..." to every player whose character has a high enough passive Perception check to discover your trap, and only those players will see a ping in the location of said tile.
 
 This script takes advantage of the `visibleTo` parameter of the [sendPing API function](https://wiki.roll20.net/API:Utility_Functions#Miscellaneous) to only ping the players who control those characters.
+
+Original script by blawson69 
+On Github:	https://github.com/blawson69
+(It appears blawson has not been active on GitHub or Roll20 for some years; I hope they are well.)
+
+This fork has some added functions by Steven Saus
+On Github:	https://github.com/uriel1998
+
+This fork changes the following: 
+ - Adds `--player|...` targeting by player display name.
+ - Adds `--token|...` targeting by token name, resolving controlling players.
+ - Resolves all hint recipients to concrete player IDs before calling `sendPing()`.
+ - Sends character-targeted whispers to controlling players instead of character names.
+ - Makes Re-Ping self-contained by storing the source token ID and resolved player IDs.
+ - Escapes the Re-Ping command payload so quoted hint text does not break the chat button.
+ - Updates the help output for the new targeting options.
+ - Fixes GM whisper `noarchive` handling
+
 
 ## Use
 

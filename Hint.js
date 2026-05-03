@@ -5,7 +5,10 @@ Sends a location ping and hint for Roll20 games
 Original script by blawson69 
 On Github:	https://github.com/blawson69
 Contact me: https://app.roll20.net/users/1781274/ben-l
-Patreon: https://www.patreon.com/benscripts
+(It appears blawson has not been active on GitHub or Roll20 for some years; I hope they are well.)
+
+This fork has some added functions by Steven Saus
+On Github:	https://github.com/uriel1998
 
 This fork changes the following: 
  - Adds `--player|...` targeting by player display name.
